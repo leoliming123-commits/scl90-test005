@@ -1,0 +1,16 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "VITE_SUPABASE_URL": "https://wmnnivvhbcffhjhjyedj.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indtbm5pdnZoYmNmZmhqaGp5ZWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2NzM3NTQsImV4cCI6MjA3ODI0OTc1NH0.cJGCMBTSIXA6jjibZAkqbwdhbRp7V6yNTjukYkWoYzo",
+    "VITE_ADMIN_PASSWORD": "admin123"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

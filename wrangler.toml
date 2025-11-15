@@ -1,0 +1,11 @@
+name = "scl90-test"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_dirs = ["src"]
+
+[build.upload]
+format = "service-worker"
+dir = "dist"

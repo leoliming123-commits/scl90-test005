@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCL-90 Mobile Assessment Timed Link</title>
+    <script>
+      // Suppress browser extension errors
+      window.addEventListener('error', (e) => {
+        if (e.message && e.message.includes('runtime.lastError')) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      });
+
+      window.addEventListener('unhandledrejection', (e) => {
+        if (e.reason && e.reason.message && e.reason.message.includes('message channel closed')) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
